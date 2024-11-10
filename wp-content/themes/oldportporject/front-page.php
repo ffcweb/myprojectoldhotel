@@ -2,21 +2,141 @@
 <?php get_header(); ?>
 
   <main>
+<section class="hero" style="background-image:url(<?php the_field('section_hero_background_image'); ?>);">
+  <div class="slider-section" >
+      <div class="container">
 
+        <div class="slider-holder"><!-- beginning -->
+
+          <!-- card 1 -->
+          <div class="slider-card" >
+            <h2 class="title">Spacious Modern smart house</h2>
+            <div class="icons">
+              <div class="icon"><i class="bi bi-geo-alt"></i></div>
+              <div class="text">Location</div>
+              <div class="icon"><i class="bi bi-cursor-fill"></i> </div>
+              <div class="text">Show on Map</div>
+            </div>
+            <div class="line-divider"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesent sodales commodo ex sed pellentesque.
+              Aliquam vitae purus sed dolor hendrenrit vehicula imperdiet ed justo. magna.
+            </p>
+            <div class="line-divider"></div>
+            <div class="details-flex">
+              <div class="item">
+                <div class="title">lot size</div>
+                <div class="info-flex">
+                  <div class="icon"><i class="bi bi-journal-minus"></i></div>
+                  <div class="text">2561 sqlf</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="title">bed</div>
+                <div class="info-flex">
+                  <div class="icon"><i class="fa-solid fa-bed"></i></div>
+                  <div class="text">9</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="title">baths</div>
+                <div class="info-flex">
+                  <div class="icon"><i class="fa-solid fa-bath"></i></div>
+                  <div class="text">2</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="title">garage</div>
+                <div class="info-flex">
+                  <div class="icon"><i class="bi bi-house-gear-fill"></i></div>
+                  <div class="text">1</div>
+                </div>
+              </div>
+            </div>
+            <div class="line-divider"></div>
+            <div class="forsale">
+              <div class="tag">for sale</div>
+              <div class="parent-flex">
+                <div class="amount">$345,000 </div>
+                <div class="a-mid"><a>best deal</a></div>
+              </div>
+              <a class="action" href="">view property</a>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="slider-card">
+            <h2 class="title">luxury real estate in Montreal</h2>
+            <div class="icons">
+              <div class="icon"><i class="bi bi-geo-alt"></i></div>
+              <div class="text">Location</div>
+              <div class="icon"><i class="bi bi-cursor-fill"></i> </div>
+              <div class="text">Show on Map</div>
+            </div>
+            <div class="line-divider"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sed quidem reiciendis dolore
+              voluptatibus perferendis recusandae esse voluptatum modi et excepturi maxime consequatur sit qui nobis,
+              dolor dicta fuga cupiditate.
+            </p>
+            <div class="line-divider"></div>
+
+            <div class="details-flex">
+              <div class="item">
+                <div class="title">lot size</div>
+                <div class="info-flex">
+                  <div class="icon"><i class="bi bi-journal-minus"></i></div>
+                  <div class="text">3231 sqlf</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="title">bed</div>
+                <div class="info-flex">
+                  <div class="icon"><i class="fa-solid fa-bed"></i></div>
+                  <div class="text">11</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="title">baths</div>
+                <div class="info-flex">
+                  <div class="icon"><i class="fa-solid fa-bath"></i></div>
+                  <div class="text">5</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="title">garage</div>
+                <div class="info-flex">
+                  <div class="icon"><i class="bi bi-house-gear-fill"></i></div>
+                  <div class="text">3</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="line-divider"></div>
+            <div class="forsale">
+              <div class="tag">for sale</div>
+              <div class="parent-flex">
+                <div class="amount">$833,000 </div>
+                <div class="a-mid"><a>best deal</a></div>
+              </div>
+              <a class="action" href="">view property</a>
+            </div>
+          </div>
+        </div> <!-- closing -->
+      </div>
+</div>
+</section>
+
+<!-- 
     <section class="hero"  style="background-image:url(<?php the_field('section_hero_background_image'); ?>);">
       <div class="container">
-        <!-- <h1 class="big-title">hero setction</h1>
-        <h2 class="sub-title">hero setction</h2> -->
 
         <h1 class="big-title"><?php the_field('section_hero_big_title'); ?></h1>
         <h5 class="sub-title"><?php the_field('section_hero_subtitle'); ?></h5>
         <p class="special-p"><?php the_field('section_discover_discription_first'); ?>
         </p><?php the_field('section_discover_discription_second'); ?>
-        
-        <!-- Dynamic button -->
+     
         <a class="hero-btn btn" href="">Book a reservation</a>
       </div>
-    </section>
+    </section> -->
 
 
 
@@ -108,6 +228,48 @@
 
 
 </main>
+
+<!-- CDN Jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- CDN Slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+      integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- https://kenwheeler.github.io/slick/ -->
+    <script>
+      $('.slider-holder').slick({
+        infinite: true,
+        fade: true,
+        ease: 'linear',
+        speed: 800,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 990,
+            settings: {
+              speed: 600,
+              autoplaySpeed: 2000,
+
+            }
+          }, // comma here required
+          {
+            breakpoint: 768,
+            settings: {
+              autoplaySpeed: 1500,
+            }
+          }
+        ]
+
+      });
+
+    </script>
 
 
 <?php get_footer(); ?>

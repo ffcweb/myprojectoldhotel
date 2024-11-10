@@ -92,6 +92,207 @@ a{
 }
 
 /* HEADER  */
+/* .hero{
+  background-image: url(/wp-content/themes/oldportporject/screenshot.jpg);
+  background-color: rgba(17, 17, 24, 0.6);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:270px 0;
+} */
+
+.hero{
+  background-image: url(/wp-content/themes/oldportporject/screenshot.jpg);
+  background-color: rgba(17, 17, 24, 0.6);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:120px 0;
+}
+
+.hero .big-title{
+  color:#fff;
+}
+
+.sub-title{
+  color:#bdb8bc;
+}
+
+.hero-btn{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.line-divider {
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+}
+
+.slider-holder {
+  padding: 20px 0;
+  background-color: white;
+  width: 650px;
+  position: absolute;
+  top: 28%;
+  right: 10%;
+  transform: translate(-10%, -5%);
+}
+
+/* Customize the arrows */
+.slick-arrow {
+  position: absolute;
+  z-index: 1;
+  background: url(white-arrow.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid rgb(239, 242, 239);
+  background-color: rgb(65, 24, 64);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 0;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-holder .slick-prev {
+  right: calc(100% + -15px);
+  transform: rotateY(-180deg) translateY(-50%);
+}
+
+.slick-next {
+  left: calc(100% + -15px);
+}
+
+.slick-slide {
+  margin: 0 15px;
+}
+
+/* Style for the slider card */
+.slider-section {
+  position: relative;
+  background: url(assestes/main.webp);
+  background-size: cover;
+  background-position: center;
+  padding: 380px 0px;
+}
+
+.slider-holder .slider-card {
+  padding: 15px;
+}
+
+.slider-holder .slider-card .title {
+  text-transform: capitalize;
+  font-size: 22px;
+}
+
+.slider-holder .slider-card .icons {
+  display: flex;
+  margin: 20px 0;
+}
+
+.slider-holder .slider-card .icons .text {
+  color: gray;
+  text-align: left;
+  margin-right: 15px;
+  font-size: 15px;
+}
+
+.slider-holder .slider-card .icons .icon {
+  margin-right: 5px;
+  font-size: 22px;
+}
+
+.slider-holder .slider-card p {
+  margin: 20px 0;
+  color: gray;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.details-flex {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 15px;
+}
+
+.details-flex .item .title {
+  text-transform: capitalize;
+  color: gray;
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+.details-flex .info-flex {
+  display: flex;
+  gap: 10px;
+}
+
+.details-flex .info-flex .icon {
+  font-size: 28px;
+  color: gray;
+}
+
+.details-flex .info-flex .text {
+  font-size: 18px;
+}
+
+.forsale {
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+.forsale .tag {
+  font-size: 18px;
+  color: gray;
+}
+
+.forsale .parent-flex {
+  display: flex;
+  gap: 25px;
+}
+
+.forsale .parent-flex .amount {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.forsale .parent-flex .a-mid {
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px 8px;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+}
+
+.forsale .action {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  padding: 15px 20px;
+  background-color: transparent;
+  border: 2px solid lightgray;
+  text-transform: capitalize;
+  border-radius: 5px;
+  display: block;
+  font-size: 20px;
+  color: gray;
+}
+
+.forsale .action:hover {
+  border: 2px solid rgb(113, 209, 113);
+  background-color: rgb(113, 209, 113);
+  color: white;
+}
+
+
+/*  */
 header{
   padding:5px 0;
   text-align: center;
@@ -138,30 +339,6 @@ header{
   color:#fff;
 }
 
-/* HERO  */
-.hero{
-  background-image: url(/wp-content/themes/oldportporject/screenshot.jpg);
-  background-color: rgba(17, 17, 24, 0.6);
-  background-blend-mode: multiply;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding:270px 0;
-  text-align: center;
-}
-
-.hero .big-title{
-  color:#fff;
-}
-
-.sub-title{
-  color:#bdb8bc;
-}
-
-.hero-btn{
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* FETAURED  */
 .featured{
@@ -441,7 +618,6 @@ background-color: #e6e3e7;
 
 textarea {
   max-width: 1200px;
-
   height: 200px;
   border: 1px solid #f2f0f0;
   color: #110c29;
@@ -519,11 +695,78 @@ textarea {
   margin-right: 20px;
 }
 
+/* About page */
+.banner {
+  background-color: black;
+  color: #fff;
+  padding: 150px 0;
+}
 
+.banner h1 {
+  font-size: 43px;
+  max-width: 700px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 100;
+}
+
+.cpat {
+  text-transform: capitalize;
+}
+
+.banner hr {
+  width: 120px;
+  font-weight: 1000;
+  border: 1.5px solid gold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.banner .flex {
+  display: flex;
+  gap: 30px;
+  padding-top: 40px;
+}
+
+.banner .left {
+  width: 50%;
+}
+
+.banner h2 {
+  font-size: 27px;
+  max-width: 450px;
+  line-height: 1.4;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 100;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  color: gold;
+}
+
+.banner p {
+  font-family: "Outfit", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.banner .right {
+  width: 50%;
+  height: 420px;
+  background: url(jose.jpg) rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center right;
+}
 
 .service-section {
-  background-color: rgb(233, 232, 232);
-  padding: 80px;
+  /* background-color: rgb(233, 232, 232); */
+  background-color: rgb(17, 7, 17);
+  padding:150px 0;
 }
 
 .service-heading {
@@ -532,8 +775,10 @@ textarea {
 }
 
 .service-heading h3 {
-  font-size: 30px;
+  font-size: 45px;
+  margin-bottom: 80px;
   font-weight: 500;
+  color:#f2f0f0;
 }
 
 .service-parent-grid {
@@ -543,30 +788,31 @@ textarea {
 }
 
 .serviece-card {
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   border-radius: 5px;
-  height: 160px;
+  height:260px;
   text-align: center;
+  background-color:#e9e6eb;
   padding: 10px 60px;
 }
 
 .card-text {
-  margin: 15px;
-  font-size: 18px;
+  margin: 30px;
+  font-size: 30px;
   font-weight: 600;
 }
 
-.a-link {
+/* .a-link {
   font-weight: 600;
-  color: rgb(255, 0, 0);
+  color: rgb(157, 0, 255);
   font-size: 16px;
   font-family: "Afacad", sans-serif;
-}
-
+} */
+/* 
 .icon {
   padding-top: 20px;
   height: 50px;
-}
+} */
 
 .serviece-card > div {
   background-repeat: no-repeat;
@@ -613,13 +859,24 @@ textarea {
   background-position: center;
 }
 
+.learn-more a{
+  background-color: rgb(206, 187, 211);
+  color:#320a34;
+}
+
+.learn-more a:hover{
+
+  background-color: rgb(47, 14, 53);
+  color:#f2f0f0;
+}
+
 .btn-learn-more {
-  background-color: rgb(255, 0, 0);
+ 
   padding: 10px 15px;
   border-radius: 5px;
 }
 
-.learn-more-text a {
+/* .learn-more-text a {
   color: #ffffff;
 }
 
@@ -627,4 +884,81 @@ textarea {
   border: 2px solid rgb(255, 0, 0);
   background-color: transparent;
   color: rgb(0, 0, 0);
+} */
+
+/* Large devices (laptops/desktops) */
+@media only screen and (max-width: 992px) {
+  .banner .flex {
+    display: flex;
+    padding-top: 40px;
+  }
+
+  .banner .right {
+    height: 480px;
+  }
+
+  .banner h1 {
+    font-size: 35px;
+  }
+  .banner h2 {
+    font-size: 25px;
+  }
+
+  .banner .right {
+    background-position: center;
+  }
 }
+
+
+
+/* very small devices (phones, 480px and down) */
+@media only screen and (max-width: 900px) {
+  .banner .right {
+    height: 550px;
+  }
+
+  .banner h1 {
+    font-size: 35px;
+  }
+  .banner h2 {
+    font-size: 25px;
+  }
+}
+
+/*  Medium devices (landscape tablets) */
+@media only screen and (max-width: 768px) {
+  .banner .flex {
+    flex-direction: column-reverse;
+  }
+  .banner .left {
+    width: 100%;
+  }
+  .banner .right {
+    width: 100%;
+  }
+  .banner .right {
+    height: 250px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .banner h1 {
+    font-size: 28px;
+  }
+  .banner h2 {
+    font-size: 25px;
+  }
+}
+
+/* very small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+  .banner h1 {
+    font-size: 20px;
+  }
+  .banner h2 {
+    font-size: 18px;
+  }
+}
+
+
