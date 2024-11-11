@@ -319,8 +319,8 @@ header{
 .forsale .parent-flex .a-mid {
   text-align: center;
   border-radius: 5px;
-  background-color: rgb(223, 217, 33, 0.3);
-  color: #fff;
+  background-color: rgba(91, 36, 140, 0.6);
+  color:#f5f3f4;
   text-transform: uppercase;
 }
 
@@ -339,20 +339,20 @@ header{
   right: 0%;
   bottom: 0%;
   padding:10px 20px;
-  color: #fff;
+  margin:30px;
   text-transform: capitalize;
   border-radius: 5px;
   display: block;
   font-size: 20px;
-  border: 2px solid rgb(241, 245, 241);
-  background-color: rgb(91, 36, 140);
-
+  background-color: gold;
+  color: #000;
 }
 
 .forsale .action:hover {
   background-color: transparent;
-  border: 2px solid rgb(181, 108, 244);
+  border: 2px solid #fff;
   color:rgb(241, 245, 241);
+font-weight: 600;
 }
 
 .slider-card h2{
@@ -553,16 +553,14 @@ font-size: 40px;
 
 .footer-text a{
   font-size:15px;
+  color:gold;
+  text-decoration: none;
 }
 
 .footer-text p{
   font-size: 15px;
   margin:10px 0;
-}
-
-.footer-text a {
-  text-decoration: none;
-  color: whitesmoke;
+  color:lightgray;
 }
 
 .footer-grid-2 {
@@ -827,16 +825,12 @@ textarea {
   height:260px;
   text-align: center;
   background-color:#e9e6eb;
-  padding: 10px 60px;
+  padding: 20px;
 }
 
 .serviece-card:hover{
-  border-radius: 5px;
-  height:260px;
-  text-align: center;
   background-color:gold;
   color:#000;
-  padding: 10px 60px;
 }
 
 .card-text {
@@ -1157,11 +1151,6 @@ textarea {
     margin:10px 0;
   }
 
-  .serviece-card{
-    height: auto;
-    padding:10px 0;
-  }
-
   .card-text{
     font-size:22px;
   }
@@ -1340,14 +1329,7 @@ textarea {
   }
 
   .serviece-card {
-    padding: 10px 30px;
     width: 100%;
-  }
-
-  .serviece-card:hover{
-    height:220px;
-    padding: 10px 30px;
-    height: auto;
   }
 
   .card-text{
