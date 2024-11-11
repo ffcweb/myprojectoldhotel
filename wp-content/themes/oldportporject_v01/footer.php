@@ -38,7 +38,7 @@
         <div class="footer-grid-2">
           <div class="container">
             <div class="footer-text">
-              <a href=""> <h6>Copyright @2024 All rights reserved</h6></a>
+              <a href=""> <p>Copyright @2024 All rights reserved</p></a>
             </div>
           </div>
         </div>

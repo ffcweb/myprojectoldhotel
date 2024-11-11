@@ -125,8 +125,6 @@ header{
   height: auto;
 }
 
-
-
 /* HERO  */
 .hero{
   background-image: url(wp-content/themes/oldportporject/screenshot.jpg);
@@ -167,7 +165,6 @@ header{
     background-size: 120%;
   }
 }
-
 
 .hero .big-title{
   color:#fff;
@@ -553,12 +550,13 @@ font-size: 40px;
 .footer-text {
   text-align: center;
 }
+
 .footer-text a{
-  font-size:16px;
+  font-size:15px;
 }
 
-.footer-text h6{
-  font-size: 18px;
+.footer-text p{
+  font-size: 15px;
   margin:10px 0;
 }
 
@@ -584,10 +582,6 @@ background-color: #e6e3e7;
   background-blend-mode: multiply;
   border-radius: 3px;
 }
-
-/* .c-latest__copy{
-  font-size:16px;
-} */
 
 /* SINGLE  - Content setting */
 .single-full-article .text-editor-content {
@@ -706,11 +700,6 @@ textarea {
   color: gray;
   text-decoration: underline;
 }
-
-/* 
-.commentmetadata p {
-  color: #000;
-} */
 
 .comment-body {
   margin: 10px 0;
@@ -941,9 +930,6 @@ textarea {
   font-weight: 600;
   }
 
-  p{
-    font-size: 15px;
-  }
   .feture-one-text-hoder h2{
     font-size: 35px;
   }
@@ -1241,6 +1227,7 @@ textarea {
   .banner h1 {
     font-size: 35px;
   }
+
   .banner h2 {
     font-size: 25px;
   }
@@ -1437,10 +1424,6 @@ textarea {
   font-size:14px;
   }
 
-  p{
-    font-size: 15px;
-  }
-
   .slider-section{
     padding:220px 0;
   }
@@ -1504,10 +1487,6 @@ textarea {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap:5px;
-  }
-
-  .footer-text h6{
-    font-size: 15px;
   }
 
 }
