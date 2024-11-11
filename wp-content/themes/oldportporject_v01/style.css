@@ -1,9 +1,9 @@
 /*
 Theme Name: old hotel v01
 Author: Fang
-Author URI: www.FangFang.ca
+Author URI: www.oldmontreal.com
 Description: An amzing palce to stay on your vacation
-Tags:Hotel, Room, vacation, hooliday, Montreal
+Tags:Hotel, room, vacation, hooliday, Montreal
 Version: 1
 */
 
@@ -53,7 +53,7 @@ margin:10px 0px;
 }
 
 p{
-  font-size:18px;
+  font-size:15px;
   line-height:25px;
   margin:10px 0;
 }
@@ -71,15 +71,14 @@ a{
   margin-right: auto;
 }
 
-
 /* HEADER   */
-
 header{
   position: sticky;
   top:0;
-  padding:5px 0;
+  z-index: 999;
+  padding:15px 0;
   text-align: center;
-  background-color: rgb(59, 6, 80);
+  background-color: rgb(46, 8, 51);
 }
 
 .header-flex{
@@ -106,7 +105,7 @@ header{
 }
 
 .menu-item{
-  background-color:rgb(59, 6, 80);
+  background-color:transparent;
   padding:5px 10px;
 }
 
@@ -445,7 +444,6 @@ font-size: 40px;
   background-blend-mode:  luminosity;
   padding:200px 0;
   text-align: center;
-
 }
 
 .small-banner .big-title{
@@ -510,9 +508,9 @@ font-size: 40px;
   text-transform: capitalize;
 }
 
-/* p .excerpt{
-  color:red;
-} */
+.blog-card-info .excerpt{
+  color:gray;
+}
 
 .blog .aothor{
   color:rgb(102, 100, 100);
@@ -538,10 +536,9 @@ font-size: 40px;
   margin: 10px 0;
 }
 
-
 /* FOOTER SECTION */
 .footer-section {
-  background: rgb(59, 6, 80);
+  background:rgb(46, 8, 51);
   padding: 50px 0;
   text-transform: capitalize;
 }
@@ -602,32 +599,9 @@ background-color: #e6e3e7;
   padding: 30px 0px;
 }
 
-/* .single-full-article .title{
-  margin:30px 0;
-
-} */
-
-/* .text-editor-content h2{
-  font-size: 28px;
-} */
-/* 
-.text-editor-content h3{
-
-  margin-top:50px;
-  margin-bottom: 20px;
-} */
-
 .text-editor-content pre{
   margin:20px 0;
 }
-
-/* .text-editor-content .c-latest__copy{
-  font-size:16px;
-} */
-
-/* .text-editor-content p{
-  margin:30px 0
-} */
 
 .single-full-article ul{
   margin-top:30px;
@@ -713,13 +687,11 @@ textarea {
 }
 
 .comment-reply-title {
-  /* font-size: 30px; */
   margin-top: 40px;
 }
 
 .comment-reply-link {
   border-radius: 5px;
-  /* font-size: 12px; */
   padding: 5px 10px;
   background-color: #b92dd1;
   color: #f5f3f4;
@@ -968,6 +940,9 @@ textarea {
   font-weight: 600;
   }
 
+  p{
+    font-size: 15px;
+  }
   .feture-one-text-hoder h2{
     font-size: 35px;
   }
@@ -1188,10 +1163,6 @@ textarea {
     padding:10px 0;
   }
 
-  /* .service-heading h3{
-    font-size: 30px;
-  } */
-
   .card-text{
     font-size:22px;
   }
@@ -1234,10 +1205,6 @@ textarea {
   .bottom-image-text h3{
     font-size:28px;
   }
-/* 
-  .single-full-article .title{
-    font-size: 30px;
-  } */
 
   .single-full-article .text-editor-content {
     margin:20px 0;
@@ -1265,10 +1232,6 @@ textarea {
   .banner h2 {
     font-size: 25px;
   }
-
-  /* .single-full-article .title{
-    font-size: 25px;
-  } */
 
 }
 
@@ -1362,7 +1325,6 @@ textarea {
     color: #fff;
   }
 
-
   /* About page */
   .banner .flex {
     flex-direction: column-reverse;
@@ -1437,10 +1399,6 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
     gap:5px;
   }
-/* 
-  .single-full-article .title{
-    font-size:22px;
-  } */
 
 }
 
@@ -1542,9 +1500,6 @@ textarea {
     font-size: 15px;
   }
 
-  /* .single-full-article .title{
-    font-size: 20px;
-  } */
 }
 
 /* very small devices (phones, 480px and down) */
