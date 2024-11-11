@@ -124,10 +124,7 @@
 
     <section class="featured">
     <div class="container">
-      <!-- <h1 class="big-title">featuured section</h1> -->
-        
-      <div class="feture-one" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" style="background-image:url(<?php the_field('section_featured_one_image'); ?>);">
-    
+      <div class="feture-one" style="background-image:url(<?php the_field('section_featured_one_image'); ?>);" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0" >
           <div class="feture-one-flex">
             <div class="feture-one-text-hoder">
               <h2><?php the_field('section_feature_one_title'); ?></h2>
@@ -137,8 +134,7 @@
           </div>
       </div>
 
-      <!--  style="background-image:url(<?php the_field('section_featured_two_image'); ?>);"  -->
-      <div class="feture-two" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0">
+      <div class="feture-two" style="background-image:url(<?php the_field('section_featured_two_image'); ?>);" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="0">
           <div class="feture-two-flex">
             <div class="feture-two-img-holder" tyle="background-image:url(<?php the_field('section_featured_two_card_image'); ?>);"></div>
             <div class="feture-two-text-holder">
@@ -192,13 +188,11 @@
 
             <!-- Dynamic IMAGE STEP-2-->
             <div class="blog-card-img" style="background-image:url(<?php echo $postimg; ?>);"></div>
-
               <div class="blog-card-info">
                 <p class="date">published: <?php the_time('y,m,d');?> </p>
                 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"> 
                   <h5 class="info-title"> <?php the_title();?></h5>
                 </a>
-
                 <!-- Excerpt  -->
                  <p class="excerpt"><?php echo wp_trim_words(get_the_excerpt(),15, '...'); ?></p>
                  <p class="aothor">Author: <?php the_author();?></p>
@@ -241,7 +235,7 @@
               autoplaySpeed: 2000,
 
             }
-          }, // comma here required
+          }, 
           {
             breakpoint: 768,
             settings: {

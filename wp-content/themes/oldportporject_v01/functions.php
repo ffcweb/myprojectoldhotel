@@ -1,6 +1,5 @@
 <?php
 
-
 function oldhotel_files(){
   wp_enqueue_style('oldhotel_main_files',
     get_stylesheet_uri());
@@ -10,6 +9,7 @@ add_action('wp_enqueue_scripts', 'oldhotel_files');
 
 // CUSTOM LOGO feature
 add_theme_support('custom-logo');
+
 
 // CUSTOM MENU  
 add_theme_support('custom-menus');
