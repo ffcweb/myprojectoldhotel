@@ -6,77 +6,70 @@
   <div class="slider-section" >
       <div class="container">
 
-        <div class="slider-holder"><!-- beginning -->
+        <div class="slider-holder" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
 
           <!-- card 1 -->
           <div class="slider-card" >
-            <h2 class="title">Spacious Modern smart house</h2>
-            <div class="icons">
-              <div class="icon"><i class="bi bi-geo-alt"></i></div>
-              <div class="text">Location</div>
-              <div class="icon"><i class="bi bi-cursor-fill"></i> </div>
-              <div class="text">Show on Map</div>
-            </div>
+            <h2 class="title"><?php the_field('section_hero_slider_card_title'); ?></h2>
             <div class="line-divider"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesent sodales commodo ex sed pellentesque.
-              Aliquam vitae purus sed dolor hendrenrit vehicula imperdiet ed justo. magna.
-            </p>
+            <p><?php the_field('section_hero_slider_card_description'); ?></p>
+
             <div class="line-divider"></div>
+            
             <div class="details-flex">
               <div class="item">
-                <div class="title">lot size</div>
+                <div class="title">lot size </div>
                 <div class="info-flex">
                   <div class="icon"><i class="bi bi-journal-minus"></i></div>
-                  <div class="text">2561 sqlf</div>
+                  <div class="text"><?php the_field('section_hero_slider_card_room_size'); ?> sqlf</div>
                 </div>
               </div>
               <div class="item">
                 <div class="title">bed</div>
                 <div class="info-flex">
                   <div class="icon"><i class="fa-solid fa-bed"></i></div>
-                  <div class="text">9</div>
+                  <div class="text"><?php the_field('section_hero_slider_card_bed_room'); ?></div>
+                  
                 </div>
               </div>
               <div class="item">
                 <div class="title">baths</div>
                 <div class="info-flex">
                   <div class="icon"><i class="fa-solid fa-bath"></i></div>
-                  <div class="text">2</div>
+                  <div class="text"><?php the_field('section_hero_slider_card_baths'); ?></div>
                 </div>
               </div>
               <div class="item">
-                <div class="title">garage</div>
+                <div class="title">Maximum occupancy</div>
                 <div class="info-flex">
                   <div class="icon"><i class="bi bi-house-gear-fill"></i></div>
-                  <div class="text">1</div>
+                  <div class="text"><?php the_field('section_hero_slider_card_maximum_occupancy'); ?></div>
                 </div>
               </div>
             </div>
             <div class="line-divider"></div>
             <div class="forsale">
-              <div class="tag">for sale</div>
+              <div class="tag">per night</div>
               <div class="parent-flex">
-                <div class="amount">$345,000 </div>
+              
+                <div class="amount">$<?php the_field('section_hero_slider_card_price'); ?> </div>
                 <div class="a-mid"><a>best deal</a></div>
               </div>
-              <a class="action" href="">view property</a>
+
+              <!-- Dynamic btn -->
+              <?php $mbanner = get_field('section_hero_slider_book_room_btn'); ?>
+              <a href="<?php echo $mbanner['url']; ?>" class="action" target=""><?php echo $mbanner['title']; ?></a>
+
             </div>
           </div>
-
+          
           <!-- card 2 -->
-          <div class="slider-card">
-            <h2 class="title">luxury real estate in Montreal</h2>
-            <div class="icons">
-              <div class="icon"><i class="bi bi-geo-alt"></i></div>
-              <div class="text">Location</div>
-              <div class="icon"><i class="bi bi-cursor-fill"></i> </div>
-              <div class="text">Show on Map</div>
-            </div>
+          <div class="slider-card" >
+            <h2 class="title"><?php the_field('section_hero_slider_card_title_two'); ?></h2>
+
             <div class="line-divider"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sed quidem reiciendis dolore
-              voluptatibus perferendis recusandae esse voluptatum modi et excepturi maxime consequatur sit qui nobis,
-              dolor dicta fuga cupiditate.
-            </p>
+            <p><?php the_field('section_hero_slider_card_description_two'); ?></p>
+            
             <div class="line-divider"></div>
 
             <div class="details-flex">
@@ -84,61 +77,50 @@
                 <div class="title">lot size</div>
                 <div class="info-flex">
                   <div class="icon"><i class="bi bi-journal-minus"></i></div>
-                  <div class="text">3231 sqlf</div>
+                  <div class="text"><?php the_field('section_hero_slider_card_room_size_two'); ?> sqlf</div>
                 </div>
               </div>
               <div class="item">
                 <div class="title">bed</div>
                 <div class="info-flex">
                   <div class="icon"><i class="fa-solid fa-bed"></i></div>
-                  <div class="text">11</div>
+                  <div class="text"><?php the_field('section_hero_slider_card_bed_room_two'); ?></div>
                 </div>
               </div>
               <div class="item">
                 <div class="title">baths</div>
                 <div class="info-flex">
                   <div class="icon"><i class="fa-solid fa-bath"></i></div>
-                  <div class="text">5</div>
+                  <div class="text"><?php the_field('section_hero_slider_card_baths_two'); ?></div>
                 </div>
               </div>
               <div class="item">
-                <div class="title">garage</div>
+                <div class="title">Maximum occupancy</div>
                 <div class="info-flex">
                   <div class="icon"><i class="bi bi-house-gear-fill"></i></div>
-                  <div class="text">3</div>
+                  <div class="text"><?php the_field('section_hero_slider_card_maximum_occupancy_copy'); ?></div>
                 </div>
               </div>
             </div>
 
             <div class="line-divider"></div>
             <div class="forsale">
-              <div class="tag">for sale</div>
+              <div class="tag">per night</div>
               <div class="parent-flex">
-                <div class="amount">$833,000 </div>
+                <div class="amount">$<?php the_field('section_hero_slider_card_price_two'); ?></div>
                 <div class="a-mid"><a>best deal</a></div>
               </div>
-              <a class="action" href="">view property</a>
+
+               <!-- Dynamic btn -->
+              <?php $mbanner = get_field('section_hero_slider_book_room_btn'); ?>
+              <a href="<?php echo $mbanner['url']; ?>" class="action" target=""><?php echo $mbanner['title']; ?></a>
+
             </div>
           </div>
-        </div> <!-- closing -->
+        </div> 
       </div>
 </div>
 </section>
-
-<!-- 
-    <section class="hero"  style="background-image:url(<?php the_field('section_hero_background_image'); ?>);">
-      <div class="container">
-
-        <h1 class="big-title"><?php the_field('section_hero_big_title'); ?></h1>
-        <h5 class="sub-title"><?php the_field('section_hero_subtitle'); ?></h5>
-        <p class="special-p"><?php the_field('section_discover_discription_first'); ?>
-        </p><?php the_field('section_discover_discription_second'); ?>
-     
-        <a class="hero-btn btn" href="">Book a reservation</a>
-      </div>
-    </section> -->
-
-
 
     <section class="featured">
     <div class="container">
@@ -162,12 +144,21 @@
             <div class="feture-two-text-holder">
             <h2><?php the_field('section_feature_two_title'); ?></h2>
             <p><?php the_field('section_feature_two_text_area'); ?></p>
-            <a class="btn" href="">Book a reservation</a>
+            
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="section-banner" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="0">
+    <div class="small-banner"  style="background-image:url(<?php the_field('section_banner_background_image'); ?>);">
+      <div class="container">
+        <h1 class="big-title"><?php the_field('section_banner_big_title'); ?></h1>
+        <h5 class="sub-title"><?php the_field('section_banner_subtitle'); ?></h5>
+      </div>
+    </div>
+ </section>
 
 
     <section class="blog">
@@ -192,9 +183,6 @@
 
         <!-- CARDS -->
           <div class="blog-card" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="0">
-
-
-
             <!-- Dynamic IMAGE STEP-1-->
              <?php 
              $postimg = wp_get_attachment_url(
@@ -202,30 +190,25 @@
              );
             ?>
 
-              <!-- Dynamic IMAGE STEP-2-->
+            <!-- Dynamic IMAGE STEP-2-->
             <div class="blog-card-img" style="background-image:url(<?php echo $postimg; ?>);"></div>
 
               <div class="blog-card-info">
                 <p class="date">published: <?php the_time('y,m,d');?> </p>
-
                 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"> 
                   <h5 class="info-title"> <?php the_title();?></h5>
                 </a>
 
                 <!-- Excerpt  -->
                  <p class="excerpt"><?php echo wp_trim_words(get_the_excerpt(),15, '...'); ?></p>
-
-                <p class="aothor">Author: <?php the_author();?></p>
+                 <p class="aothor">Author: <?php the_author();?></p>
               </div>
           </div>
 
          <!-- LOOP BLOGS - STEP 2 -->
           <?php } wp_reset_postdata(); ?>
-
       </div>
-    
     </section>
-
 
 </main>
 
